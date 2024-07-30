@@ -1,6 +1,7 @@
 /********** Template CSS **********/
+
 :root {
-    --primary:#ffc107;
+    --primary: #ffc107;
     --light: #F0FBFC;
     --dark: #181d38;
 }
@@ -23,6 +24,7 @@
 
 
 /*** Spinner ***/
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -38,6 +40,7 @@
 
 
 /*** Button ***/
+
 .btn {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -77,6 +80,7 @@
 
 
 /*** Navbar ***/
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -100,12 +104,58 @@
     color: var(--primary);
 }
 
-@media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+
+/* adding styles for online Courser div */
+
+.navBarCatBelow {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    display: none;
+    top: 100%;
+    left: 0;
+    height: 25vh;
+    /* 25% of the viewport height */
+    overflow-y: auto;
+    z-index: 9999;
+    /* Ensure it appears above other content */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* Use flex for multi-column layout */
+}
+
+.navBarCatBelow ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    /* Each column takes 25% of the width */
+}
+
+.navBarCatBelow ul li {
+    margin: 0 0 10px;
+}
+
+.navBarCatBelow ul li p {
+    color: black;
+    margin: 0 0 10px;
+}
+
+.navBarCatBelow ul li a {
+    color: #71717a;
+}
+
+.reducedSpacing p,
+.reducedSpacing a {
+    margin: 5px 0;
+}
+
+@media (max-width: 992px) {
+    .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
-
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
@@ -134,13 +184,11 @@
         visibility: hidden;
         transition: .5s;
     }
-
     .navbar .dropdown-menu.fade-down {
         top: 100%;
         transform: rotateX(-75deg);
         transform-origin: 0% 0%;
     }
-
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
         transform: rotateX(0deg);
@@ -152,12 +200,12 @@
 
 
 /*** Header carousel ***/
+
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
     }
-    
     .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
@@ -207,12 +255,13 @@
     background: rgba(15, 23, 43, .7);
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
 
 
 /*** Section Title ***/
+
 .section-title {
     position: relative;
     display: inline-block;
@@ -253,6 +302,7 @@
 
 
 /*** Service ***/
+
 .service-item {
     background: var(--light);
     transition: .5s;
@@ -273,6 +323,7 @@
 
 
 /*** Categories & Courses ***/
+
 .category img,
 .course-item img {
     transition: .5s;
@@ -285,6 +336,7 @@
 
 
 /*** Team ***/
+
 .team-item img {
     transition: .5s;
 }
@@ -295,6 +347,7 @@
 
 
 /*** Testimonial ***/
+
 .testimonial-carousel::before {
     position: absolute;
     content: "";
@@ -368,6 +421,7 @@
 
 
 /*** Footer ***/
+
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;

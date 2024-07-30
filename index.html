@@ -11,6 +11,10 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,11 +54,70 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- added the Online Courses -->
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="index.html" class="nav-item nav-link active" id="Online_hide">
+                    Online Classes <i class="fas fa-chevron-down"></i> 
+                </a>
+                <div class="navBarCatBelow">
+                    <ul>
+                        <li>
+                            <p>UG</p>
+                            <a href="#">Bachelors Of Computer Application(BCA)</a><br>
+                            <a href="#">Bachelors Of Business Administration(BBA)</a><br>
+                            <a href="#">Bachelors Of Commerce(B.Com)</a><br>
+                            <a href="#">BE/BTECH</a><br>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>PG</p>
+                            <a href="#">MBA(Dual Specialization)</a><br>
+                            <a href="#">Master Of Computer Applications(MCA)</a><br>
+                            <a href="#">Master Of Commerce(M.com)</a><br>
+                            <a href="#">MBA</a><br>
+                            <a href="#">ME/MTech</a><br>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>Languages</p>
+                            <a href="#">English</a><br>
+                            <a href="#">Kannada</a><br>
+                            <a href="#">Hindi</a><br>
+                            <a href="#">Tamil</a><br>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>Specialisation</p>
+                            <a href="#">Commerce-Accounts</a>
+                            <a href="#">Taxation</a>
+                            <a href="#">Finance</a>
+                            <a href="#">HR</a>
+                            <a href="#">Marketing</a>
+                            <a href="#">Statistics</a>
+                            <a href="#">Computer</a>
+                            <a href="#">Physics</a>
+                            <a href="#">Chemistry</a>
+                            <a href="#">Mathematics</a>
+                            <a href="#">Biology</a>
+                            <a href="#">Computer Science</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>More</p>
+                            <a href="#">PUC</a><br>
+                            <a href="#">Science</a><br>
+                            <a href="#">Commerce</a><br>
+                            <a href="#">Arts</a><br>
+                            <a href="#">Diploma</a><br>
+                        </li>
+                    </ul>
+                </div>
+                <a href="index.html" class="nav-item nav-link ">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <!-- <a href="courses.html" class="nav-item nav-link">Courses</a> -->
-
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
                     <div class="dropdown-menu fade-down m-0">
@@ -62,7 +125,6 @@
                         <a href="pg.html" class="dropdown-item">Post Graduate</a>
                         <a href="puc.html" class="dropdown-item">Pre-University Course</a>
                         <a href="Diploma.html" class="dropdown-item">Diploma</a>
-
                     </div>
                 </div>
                 <div class="nav-item dropdown">
@@ -179,7 +241,9 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
                     <h1 class="mb-4">Welcome to Yellow Book Academy</h1>
-                    <p class="mb-4">Yellow Book Academy, founded by Mrs. Suvarna H.T, M.Com, is an innovative online e-learning platform dedicated to UG, PG, and PUC students. The academy offers a comprehensive range of courses designed to enhance academic performance and provide students with the tools they need to succeed in their studies. With a focus on quality education and personalized learning experiences, Yellow Book Academy is committed to empowering students to achieve their academic goals from the comfort of their own homes.</p>
+                    <p class="mb-4">Yellow Book Academy, founded by Mrs. Suvarna H.T, M.Com, is an innovative online e-learning platform dedicated to UG, PG, and PUC students. The academy offers a comprehensive range of courses designed to enhance academic performance
+                        and provide students with the tools they need to succeed in their studies. With a focus on quality education and personalized learning experiences, Yellow Book Academy is committed to empowering students to achieve their academic
+                        goals from the comfort of their own homes.</p>
                     <!-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p> -->
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
@@ -219,7 +283,7 @@
             <div class="row g-3">
                 <div class="col-lg-7 col-md-6">`
                     <div class="row g-3">
-                        
+
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="ug.html">
                                 <img class="img-fluid" src="img/cat-1.jpg" alt="">
@@ -481,7 +545,7 @@
                     <h5 class="mb-0">Client Name</h5>
                     <p>Profession</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
@@ -489,7 +553,7 @@
                     <h5 class="mb-0">Client Name</h5>
                     <p>Profession</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
@@ -497,7 +561,7 @@
                     <h5 class="mb-0">Client Name</h5>
                     <p>Profession</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
@@ -505,14 +569,14 @@
                     <h5 class="mb-0">Client Name</h5>
                     <p>Profession</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Testimonial End -->
-        
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -609,6 +673,25 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
+    <!-- display section on clicking the online Courses -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const onlineClassesLink = document.querySelector('.nav-item.nav-link.active');
+            const navBarCatBelow = document.querySelector('.navBarCatBelow');
+
+            onlineClassesLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                navBarCatBelow.style.display = navBarCatBelow.style.display === 'flex' ? 'none' : 'flex';
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!onlineClassesLink.contains(event.target) && !navBarCatBelow.contains(event.target)) {
+                    navBarCatBelow.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
     <script src="js/main.js"></script>
 </body>
 
