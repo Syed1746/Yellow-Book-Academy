@@ -678,12 +678,12 @@
         document.addEventListener('DOMContentLoaded', function() {
             const onlineClassesLink = document.querySelector('.nav-item.nav-link.active');
             const navBarCatBelow = document.querySelector('.navBarCatBelow');
-
-            onlineClassesLink.addEventListener('click', function(event) {
-                event.preventDefault();
-                navBarCatBelow.style.display = navBarCatBelow.style.display === 'flex' ? 'none' : 'flex';
-            });
-
+            onlineClassesLink.addEventListener(
+                'click',
+                function(event) {
+                    event.preventDefault();
+                    navBarCatBelow.style.display = navBarCatBelow.style.display === 'flex' ? 'none' : 'flex';
+                });
             document.addEventListener('click', function(event) {
                 if (!onlineClassesLink.contains(event.target) && !navBarCatBelow.contains(event.target)) {
                     navBarCatBelow.style.display = 'none';
@@ -691,8 +691,8 @@
             });
         });
     </script>
-
-    <script src="js/main.js"></script>
+    < script src="js/main.js">
+        </script>
 </body>
 
 </html>

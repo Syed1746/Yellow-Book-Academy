@@ -102,6 +102,7 @@
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
+    /* background-color: #71717a; */
 }
 
 
